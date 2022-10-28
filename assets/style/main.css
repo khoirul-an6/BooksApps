@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #6495ed;
+  padding: 15px 0;
+}
+
+header h1 {
+  font-family: "Viga", sans-serif;
+  font-size: 40px;
+  text-align: center;
+  color: white;
+}
+
+main {
+  margin: 20px 0;
+  font-family: sans-serif;
+  margin: 0 auto;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+}
+main .input {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 40px;
+  background-color: rgb(238, 238, 238);
+  box-shadow: 5px 5px 10px #cecece;
+  margin-bottom: 50px;
+}
+
+main .input h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #6495ed;
+}
+
+main .input .divInput {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+main .input .divCheck {
+  display: flex;
+  flex-direction: row;
+}
+
+main .input .divCheck label {
+  margin-left: 10px;
+}
+
+main .input .divInput label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #6495ed;
+}
+
+main .input .divInput input {
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+  border: 2px solid #3974ed;
+}
+
+main .input a {
+  display: flex;
+  background-color: #6495ed;
+  color: white;
+  width: 50%;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 18px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+main .hasil {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 40px;
+  background-color: rgb(238, 238, 238);
+  box-shadow: 5px 5px 10px #cecece;
+}
+
+main .hasil .head {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+
+main .hasil .head h1 {
+  text-align: center;
+  color: #3a7af1;
+  font-size: 30px;
+  align-items: center;
+  width: 100%;
+  padding-left: 190px;
+}
+
+main .hasil .head .search {
+  position: relative;
+  display: flex;
+  width: 200px;
+  justify-content: end;
+}
+
+main .hasil .head .search input {
+  border-radius: 7px;
+  border: 0;
+  padding: 4px;
+  box-sizing: border-box;
+  width: 200px;
+  position: relative;
+  right: -30px;
+}
+
+main .hasil .head .search img {
+  height: 30px;
+  padding: 8px;
+  border-radius: 7px;
+  z-index: 1;
+}
+
+main .hasil .rak h2 {
+  color: #436ab3;
+  margin-bottom: 20px;
+}
+
+main .hasil .rak .bacaBuku {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+main .hasil .rak .bacaBuku .card {
+  padding: 20px;
+  border-radius: 15px;
+  background: white;
+  margin-bottom: 15px;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(166, 173, 201, 0.2);
+  min-height: 130px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+main .hasil .rak .bacaBuku .card h4 {
+  font-size: 25px;
+  color: #333333;
+  padding-right: 20px;
+  margin-bottom: 10px;
+}
+
+main .hasil .rak .bacaBuku .card .icon {
+  display: flex;
+  align-items: center;
+}
+
+main .hasil .rak .bacaBuku .card .teks {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main .hasil .rak .bacaBuku .card .teks .tumbnail {
+  display: flex;
+  color: #969696;
+  flex-direction: column;
+  line-height: 20px;
+}
+
+main .hasil .rak .bacaBuku .card .icon img {
+  height: 40px;
+  background-color: rgba(0, 136, 233, 0.438);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+main .hasil .rak .bacaBuku .card .icon img:hover {
+  background-color: rgb(3, 121, 206);
+  cursor: pointer;
+}
