@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aplikasi Pustaka</title>
+    <link rel="stylesheet" href="assets/style/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Viga&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Pustaku</h1>
+    </header>
+    <main>
+      <section class="input">
+        <h1>Masukkan daftar list buku anda</h1>
+        <form id="input_buku">
+          <div class="divInput">
+            <label for="judulBuku">Judul Buku</label>
+            <input
+              id="judulBuku"
+              type="text"
+              placeholder="Masukkan judul buku"
+            />
+          </div>
+          <div class="divInput">
+            <label for="penulisBuku">Penulis</label>
+            <input
+              id="penulisBuku"
+              type="text"
+              placeholder="Masukkan Penulis buku"
+            />
+          </div>
+          <div class="divInput">
+            <label for="tahunBuku">Tahun Buku</label>
+            <input
+              id="tahunBuku"
+              type="number"
+              placeholder="Masukkan tahun buku"
+            />
+          </div>
+          <div class="divCheck">
+            <input id="selesaiBaca" type="checkbox" />
+            <label for="selesaiBaca">Selesai baca</label>
+          </div>
+          <a href="#" type="submit" id="btn-submit"> Tambahkan Buku</a>
+        </form>
+      </section>
+
+      <section class="hasil">
+        <div class="head" id="headCard">
+          <h1>Rak Buku</h1>
+          <div class="search">
+            <input
+              type="text"
+              id="src"
+              placeholder="Search"
+              onkeyup="searching()"
+            />
+            <img src="assets/img/magnifying-glass.png" />
+          </div>
+        </div>
+        <div class="rak">
+          <h2>Daftar buku selesai di baca</h2>
+          <div class="bacaBuku" id="completed"></div>
+          <h2>Daftar buku belum selesai baca</h2>
+          <div class="bacaBuku" id="uncompleted"></div>
+        </div>
+      </section>
+    </main>
+    <script src="assets/style/main.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </body>
+</html>
